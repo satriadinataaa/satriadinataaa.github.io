@@ -3,29 +3,68 @@
 <head>
 	<title></title>
 	<style>
-		table{border-color: yellow;}
+		a{text-decoration: none;}
+		.tombol {
+			padding: 15px 30px;
+			background-color: aqua;
+			margin: 4px 2px;
+			font-family: Verdana;
+			border: 5px;
+		}
+		textarea{
+			resize: none;
+		}
 	</style>
 </head>
-<body bgcolor="#4db8ff">
-	<center><h1><font color="yellow" face="Comic Sans MS">Welcome to Gallery</font> </h1></center>
-	<hr color="green" size="3px">
-	<table border="3" width="100%" >
-		<tr>
-			<td width="50%"><font >Elizabeth:</font><br><br>
-				<img src="eli.png" width="700" height="400">
+<body>
+	<table width="100%" border="5px">
+		<tr height="100" bgcolor="#ecfc07" >
+			<td colspan="2"><center><font face="Verdana" color="green" size="20">Welcome To Gallery</font></center></td>
+		</tr>
+		<tr height="300" >
+			<td width="20%" bgcolor="#24ce1e">
+				<form>
+					<hr><label id=""> Nama: </label><input type="" name="" placeholder="Nama Lengkap" required=""><br><br>
+					<label>Jenis Kelamin:</label><br>
+					<input type="radio" name="jkel" checked="" >Pria<input type="radio" name="jkel">Wanita
+					<br><br>
+					<label>Komentar anda:</label>
+					<textarea cols="30" rows="5" >
+						
+					</textarea><br>
+					<input type="submit" name="" value="Kirim">
+					<input type="reset" name="" value="Hapus Input"><br>
+					<hr>
+				</form>
 			</td>
-			<td><font>PSDM BPH HMIF 2017:</font><br><br>
-				<img src="IMG_0476.JPG" width="700" height="400">
+			<td>
+				<table border="3" width="100%" height="300">
+					<tr>
+						<td width>
+							<img src="eli.png" width="500" height="250">
+						</td>
+						<td>
+							<img src="IMG_0476.JPG" width="500" height="250">
+						</td>
+					</tr>
+					<tr>
+						<td width>
+							<img src="liquid.png" width="500" height="250">
+						</td>
+						<td>
+							<img src="eli.png" width="500" height="250">
+						</td>
+					</tr>
+
+				</table>
 			</td>
 		</tr>
-		<tr>
-			<td width="50%"><font >Team Liquid Dota2:</font><br><br>
-				<img src="liquid.png" width="700" height="400">
-			</td>
-			<td><font>Elizabeth:</font><br><br>
-				<img src="eli.png" width="700" height="400">
-			</td>
+		<tr bgcolor="#ecfc07">
+			<td colspan="2" style="padding: 10px 10px"><center>Copyright 2018 by Satriadinata &copy</center></td>
 		</tr>
+
+
+
 	</table>
 </body>
 </html>
