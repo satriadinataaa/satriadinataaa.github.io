@@ -1,0 +1,34 @@
+div.container {    width: 100%;    border: 1px solid gray;}
+header {	padding: 1em;	color: white;	background-color: black;	text-align: right;clear:both;}
+.bawahheader {	background-color: lightgreen; padding: 1.5em;}
+.tombol{		background-color: green;	color: white;	font: 12px;	text-align: center;
+	cursor: pointer;	margin: 4px 2px;	padding: 15px 32px;	position: relative;	left: 320px;	border: 4px solid black;
+}
+.tombolfb{	background-color: #5ec5e5;	color: black;}
+.tomboltwitter{background-color:#f4ce42; color: black; }
+.tombolig{background-color: #e83e4c;color:black;}
+.tombolunsri{background-color: #d8ed1e;color: black;}
+.tombolw3{background-color: #48a547;color: black;}
+nav{	margin: 0em;}
+a{text-decoration: none;color: black;}
+.isi {	color: white;	background-color: #47e544;}
+.merah{
+	background-color: red;
+	height: 30px;
+}
+.hijau{
+	background-color: green;
+	height: 30px;
+}
+.biru{
+	background-color: #6471fc;
+	height: 30px;
+}
+.kuning{
+	background-color: yellow;
+	height: 30px;
+}
+table{color: black;}
+
+
+
