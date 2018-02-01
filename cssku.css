@@ -2,7 +2,7 @@ div.container {    width: 100%;    border: 1px solid gray;}
 header {	padding: 1em;	color: white;	background-color: black;	text-align: right;clear:both;}
 .bawahheader {	background-color: lightgreen; padding: 1.5em;}
 .tombol{		background-color: green;	color: white;	font: 12px;	text-align: center;
-	cursor: pointer;	margin: 4px 2px;	padding: 15px 32px;	position: relative;	left: 320px;	border: 4px solid black;
+	cursor: pointer;	margin: 4px 2px;	padding: 15px 32px;	position: relative;	left: 25%;	border: 4px solid black;
 }
 .tombolfb{	background-color: #5ec5e5;	color: black;}
 .tomboltwitter{background-color:#f4ce42; color: black; }
