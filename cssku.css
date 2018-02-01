@@ -27,9 +27,11 @@ a{text-decoration: none;color: black;}
 .kuning{
 	background-color: yellow;
 	height: 30px;
+	
 }
 table{color: black;}
-
+.latarijo {	background-color: lightgreen; padding: 1.5em;}
+.latarijogelep {	background-color: #7be586; padding: 1.5em;}
 
 
 
