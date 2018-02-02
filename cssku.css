@@ -11,7 +11,7 @@ header {	padding: 1em;	color: white;	background-color: black;	text-align: right;
 .tombolw3{background-color: #48a547;color: black;}
 nav{	margin: 0em;}
 a{text-decoration: none;color: black;}
-.isi {	color: white;	background-color: #47e544;}
+.isi {	color: white;	background-color: #3bf793;}
 .merah{
 	background-color: red;
 	height: 30px;
@@ -32,6 +32,10 @@ a{text-decoration: none;color: black;}
 table{color: black;}
 .latarijo {	background-color: lightgreen; padding: 1.5em;}
 .latarijogelep {	background-color: #7be586; padding: 1.5em;}
+.ijolumut{
 
-
+	background-color: #52d38e;
+	height: 30px;
+	
+}
 
