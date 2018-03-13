@@ -1,160 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="shortcut icon" href="favicon.ico">
-<link rel="stylesheet" type="text/css" href="cssku.css">
 	<title></title>
-	<script type="text/javascript"> 
-		function disableselect(e){  
-		return false  
-		}  
+	<style type="text/css">
+		.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
 
-		function reEnable(){  
-		return true  
-		}  
+.button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 
-		//if IE4+  
-		document.onselectstart=new Function ("return false")  
-		document.oncontextmenu=new Function ("return false")  
-		//if NS6  
-		if (window.sidebar){  
-		document.onmousedown=disableselect  
-		document.onclick=reEnable  
+	</style>
+	<script>
+		function tes()
+		{
+			var person = prompt("Please enter your name", "Harry Potter");
+
+			if (person == "satria") {
+    		window.location.href="aku.html";
+			}
+			else if (person == "Satria") {
+    		window.location.href="aku.html";
+			}
+			else{
+				window.location.href="error.html"
+			}
 		}
-		alert ("Selamat datang di satriadinataaa.me ");
 	</script>
 </head>
-<body>
-	<div class="container"><!--IKAK DIE NAME NYE HEADER-->
-		<header>
-		<h1>Satriadinataaa.me</h1>
-		</header>
-	</div>
-	<div><!-- YANG IKAK TOMBOL2 LINK SOSMED-->
-		<nav class="bawahheader">
-			<a href="https://www.facebook.com/CerberusClawOfficial" class="tombol tombolfb" target="_blank">Facebook Ku</a>
-			<a href="https://www.instagram.com/satriadinata_/" class="tombol tombolig" target="_blank">Instagram Ku</a>
-			<a href="https://twitter.com/satriadinataa_" class="tombol tomboltwitter" target="_blank">Twitter Ku</a>
-			<a href="https://www.w3schools.com" class="tombol tombolw3" target="_blank">W3Schools</a>
-		</nav>
-	</div>
-	<div class="isi" > <!--TABEL-->
-		<div style="border-bottom: 6px dotted #20661f"></div><!-- membuat garis titik titik--> 
-		<center><font face="Comic Sans MS" size="20" color="black" >Knowledge is Power</font></center>
-		<div style="border-bottom: 6px dotted #20661f"></div> <!--membuat garis titik titik-->
-	</div>
-	<div style="background-color: #17e878"><!--GARIS BERJALAN LUL BA -->
-		<marquee><hr class="ijolumut" style="border: 10px dotted yellow;" width="100%" /></marquee>
-	</div>
-	<div><!--bagian sidebar dan profil-->
-		<table  width="100%" >
-			<tr height="500">
-					<td width="20%" bgcolor="#38c479"> 
-							<fieldset>
-								<legend>MENU:	</legend>
-								<ul>
-									<li><a href="#kemampuan">Kemampuan</a></li>
-									<li><a href="#minat">Minat</a></li>
-									
-
-
-								</ul>
-
-
-
-							</fieldset>
-					</td>
-					<td bgcolor="#52d38e">
-						<pre><h2 style="border-bottom: 3px dotted grey"><font face="Verdana"> Profile: </font></h2></pre>
-				<ul>
-					<li><pre><font face="Times New Roman">Nama : Satriadinata <img  src="ane.jpg" align="right" border="5" style="border-color:#00004d" width="200" height="200"></font></pre></li>
-					<li><pre><font face="Times New Roman">Umur : 19 Tahun</font> </pre></li>
-					<li><pre><font face="Times New Roman">TTL   : 9 Agustus 1998</font></pre></li>
-					<li><pre><font face="Times New Roman">Email : satriadinata2@gmail.com</font></pre></li>
-					<li>Riwayat Pendidikan:
-						<ol >	
-							<li>TK Islam Azzahrah</li>
-							<li>SD Islam Azzahrah</li>
-							<li>SMP Islam Azzahrah 2</li>
-							<li>MAN 3 Palembang</li>
-						</ol>
-					</li><br>
-					<li>Hobi:
-						<ul>
-							<li>Basket</li>
-							<li>Dota 2</li>	
-							<li>Desain Grafis</li>
-						</ul>
-					</li>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-
-				</ul>
-					</td>
-			</tr>
-		</table>
-
-	</div>
-	<div class="container"><!--IKAK DIE NAME NYE HEADER-->
-		<header>
-		<h1 style="text-align: center;">About me :</h1>
-		</header>
-	</div>
-	
-
-	<div class="latarijo"><!--KEMAMPUAN-->
-			<h1 id="kemampuan" style="color: black;"> Kemampuan </h1>
-			<table border="1"width="100%" >
-					
-				<tr>
-					<td width="30%" align="center"><strong>HTML</strong></td>
-					<td><hr class="merah" width="90%" align="left"></td>
-				</tr>
-				<tr>
-					<td width="30%" align="center"><strong>Coreldraw</strong></td>
-					<td><hr class="biru" width="80%" align="left"></td>
-				</tr>
-				<tr>
-					<td width="30%" align="center"><strong>CSS</strong></td>
-					<td><hr class="hijau" width="75%" align="left"></td>
-				</tr>
-				
-				<tr>
-					<td width="30%" align="center"><strong>Photoshop</strong></td>
-					<td><hr class="kuning" width="50%" align="left"></td>
-				</tr>
-			</table>
-	</div>
-	<div class="latarijogelep"><!--Minat-->
-			<h1 id="minat" style="color: black;"> Minat </h1>
-			<table border="1"width="100%" >
-					
-				<tr>
-					<td width="30%" align="center"><strong>Programming</strong></td>
-					<td><hr class="merah" width="70%" align="left"></td>
-				</tr>
-				<tr>
-					<td width="30%" align="center"><strong>Web Programming</strong></td>
-					<td><hr class="biru" width="80%" align="left"></td>
-				</tr>
-				<tr>
-					<td width="30%" align="center"><strong>Desain Grafis</strong></td>
-					<td><hr class="hijau" width="65%" align="left"></td>
-				</tr>
-				
-				<tr>
-					<td width="30%" align="center"><strong>Video Editing</strong></td>
-					<td><hr class="kuning" width="35%" align="left"></td>
-				</tr>
-			</table>
-	</div>
-	
-
-
+<body background="nKDqaO.jpg">
+<center><button type="" onClick="tes()" class="button button1">Validasi sekarang</button></center>
+<a href="">
 </body>
 </html>
