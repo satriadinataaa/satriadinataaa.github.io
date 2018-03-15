@@ -5,7 +5,7 @@
 	<style type="text/css">
 		.button {
     background-color: #4CAF50; /* Green */
-    border: none;
+    border: 20px solid black;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -26,21 +26,24 @@
 	<script>
 		function tes()
 		{
-			var person = prompt("Please enter your name", "Harry Potter");
+			var person = prompt("Please enter your name", "Nama kau siapa?");
 
 			if (person == "satria") {
+				alert("Login berhasil")
     		window.location.href="aku.html";
 			}
 			else if (person == "Satria") {
     		window.location.href="aku.html";
 			}
 			else{
+				alert("Login gagal, Harap hubungi admin")
 				window.location.href="error.html"
 			}
 		}
 	</script>
 </head>
 <body background="nKDqaO.jpg">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <center><button type="" onClick="tes()" class="button button1">Validasi sekarang</button></center>
 <a href="">
 </body>
