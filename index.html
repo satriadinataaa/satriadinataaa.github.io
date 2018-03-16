@@ -1,50 +1,67 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<style type="text/css">
-		.button {
-    background-color: #4CAF50; /* Green */
-    border: 20px solid black;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-}
-
-.button1 {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-	</style>
-	<script>
-		function tes()
-		{
-			var person = prompt("Please enter your name", "Nama kau siapa?");
-
-			if (person == "satria") {
-				alert("Login berhasil")
-    		window.location.href="aku.html";
-			}
-			else if (person == "Satria") {
-    		window.location.href="aku.html";
-			}
-			else{
-				alert("Login gagal, Harap hubungi admin")
-				window.location.href="error.html"
-			}
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			.button {
+	    background-color: #4CAF50; /* Green */
+	    border: 20px solid black;
+	    color: black;
+	    padding: 15px 32px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 16px;
+	    margin: 4px 2px;
+	    cursor: pointer;
+	    -webkit-transition-duration: 0.4s; /* Safari */
+	    transition-duration: 0.4s;
+	}
+	td{
+		padding: 1em;				
+	}
+	.button:hover
+	{
+		background color: #001a00;
+		color : white;
+	}
+	.button1 {
+	    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	}
+		h1{
+			background-color: white;
+			border: 5px solid black;
+			padding: 5px;
 		}
-	</script>
-</head>
-<body background="nKDqaO.jpg">
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<center><button type="" onClick="tes()" class="button button1">Validasi sekarang</button></center>
-<a href="">
-</body>
-</html>
+		</style>
+		<script>
+			function tes()
+			{
+				var person = prompt("Please enter your name", "satria");
+
+				if (person == "satria") {
+					alert("Login berhasil")
+	    		window.location.href="aku.html";
+				}
+				else if (person == "Satria") {
+	    		window.location.href="aku.html";
+				}
+				else{
+					alert("Login gagal, Harap hubungi admin")
+					window.location.href="error.html"
+				}
+			}
+		</script>
+	</head>
+	<body background="nKDqaO.jpg">
+	<center><h1>Welcome to Login page</h1></center>
+	<br><br><br><br><br><br><br><br><br><br>
+	<center>
+	<br>
+	<table border="5px" bgcolor="grey" width="300"><tr ><td>
+	<center><button type="" onClick="tes()" class="button button1">Validasi sekarang</button></center>
+	</td></tr></table>
+	</center>
+	
+	</body>
+	</html>
