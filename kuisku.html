@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kuis Satria Ade</title>
+	<script>
+				var i=0	;
+		var skor=0;
+		var nyawa=3;
+		function mulai()
+		{
+
+			if(i==1)
+			{
+				soal2();
+			}
+			if(i==2)
+			{
+				soal3();
+			}
+			if(i==3)
+			{
+				soal4();
+			}
+			if(i==4)
+			{
+				soal5();
+			}
+			
+		}
+		function soal1()
+		{
+			document.getElementById("nyawaku").hidden=false;
+			document.getElementById("jawabsaya").hidden=false;
+			document.getElementById("tombolku").hidden=false;
+			document.getElementById("nokosong").hidden=false;
+			document.getElementById("welcome").hidden=true;
+			document.getElementById("formgua").hidden=false;
+			document.getElementById("skorku").hidden=false;
+			document.getElementById("mulaiku").hidden=true;
+			document.formku.question.value="Siapakah Pencipta Lagu Indonesia Raya?";
+				document.getElementById("pilihangw1").checked=false;
+				document.getElementById("pilihangw2").checked=false;
+				document.getElementById("pilihangw3").checked=false;
+				document.getElementById("pilihangw4").checked=false;
+			document.getElementById("pila").innerHTML="W.R Soepratman";
+			document.getElementById("pilb").innerHTML="Soekarno";
+			document.getElementById("pilc").innerHTML="W.D Soepratman";
+			document.getElementById("pild").innerHTML="Soemarno";
+			document.getElementById("nyawagw").innerHTML=nyawa;
+			document.getElementById("total").innerHTML=skor;
+		
+		}
+		function soal2()
+		{
+			document.getElementById("Answer").innerHTML="";
+			document.formku.question.value="Tanggal Berapakah Indonesia Merdeka?";
+			document.getElementById("pilihangw1").checked=false;
+				document.getElementById("pilihangw2").checked=false;
+				document.getElementById("pilihangw3").checked=false;
+				document.getElementById("pilihangw4").checked=false;
+			document.getElementById("pila").innerHTML="25 November 2017";
+			document.getElementById("pilb").innerHTML="17 Agustus 1945";
+			document.getElementById("pilc").innerHTML="9 Agustus 1998";
+			document.getElementById("pild").innerHTML="15 Mei 1998";
+			document.getElementById("tombolku").disabled=true;
+		}
+		function soal3()
+		{
+			document.getElementById("Answer").innerHTML="";
+			document.formku.question.value="Siapakah Pencetus Sistem Tanam Paksa Saat Zaman Belanda?";
+				document.getElementById("pilihangw1").checked=false;
+				document.getElementById("pilihangw2").checked=false;
+				document.getElementById("pilihangw3").checked=false;
+				document.getElementById("pilihangw4").checked=false;
+			document.getElementById("pila").innerHTML="Amer Al Barkawi";
+			document.getElementById("pilb").innerHTML="Artour Babaev";
+			document.getElementById("pilc").innerHTML="Van Den Bosch ";
+			document.getElementById("pild").innerHTML="Saahil Arora";
+			document.getElementById("tombolku").disabled=true;
+		}
+		function soal4()
+		{
+			document.getElementById("Answer").innerHTML="";
+			document.formku.question.value="Yang Bukan Nama Lama Ibu Kota Jakarta adalah?";
+				document.getElementById("pilihangw1").checked=false;
+				document.getElementById("pilihangw2").checked=false;
+				document.getElementById("pilihangw3").checked=false;
+				document.getElementById("pilihangw4").checked=false;
+			document.getElementById("pila").innerHTML="Beijing";
+			document.getElementById("pilb").innerHTML="Sunda Kelapa";
+			document.getElementById("pilc").innerHTML="Djakarta";
+			document.getElementById("pild").innerHTML="Batavia";
+			document.getElementById("tombolku").disabled=true;
+		}
+		function soal5()
+		{
+			document.getElementById("Answer").innerHTML="";
+			document.getElementById("pilihangw1").checked=false;
+				document.getElementById("pilihangw2").checked=false;
+				document.getElementById("pilihangw3").checked=false;
+				document.getElementById("pilihangw4").checked=false;
+			document.formku.question.value="Apakah Tujuan Penjajah Datang Ke Indonesia ?";
+				
+			document.getElementById("pila").innerHTML="Bosan Menjalani Hidup Yang Biasa ";
+			document.getElementById("pilb").innerHTML="Mencari Hiburan Baru";
+			document.getElementById("pilc").innerHTML="Bermain DOTA 2";
+			document.getElementById("pild").innerHTML="Mencari Rempah Rempah";
+			document.getElementById("tombolku").hidden=true;
+
+		}
+		function validasi()
+		{
+
+				
+			if(i==0)
+			{
+				jawaban1();
+			
+			}
+			else if(i==1)
+			{
+				jawaban2();
+			
+			}
+			else if(i==2)
+			{
+				jawaban3();
+				if(nyawa==0)
+				{
+					Kalah();
+				}
+			}
+			else if(i==3)
+			{
+				jawaban4();
+				if(nyawa==0)
+				{
+					Kalah();
+				}
+			}
+			else if(i==4)
+			{
+				jawaban5();
+				if(nyawa==0)
+				{
+					Kalah();
+				}
+				else
+				{
+					Menang();
+				}
+
+			}
+			
+		
+		}
+		function Menang()
+		{
+			document.getElementById("nyawaku").hidden=true;
+			document.getElementById("jawabsaya").hidden=true;
+			document.getElementById("tombolku").hidden=true;
+			document.getElementById("nokosong").hidden=true;
+			document.getElementById("welcome").hidden=true;
+			document.getElementById("formgua").hidden=true;
+			document.getElementById("skorku").hidden=true;
+			document.getElementById("mulaiku").hidden=true;
+			document.getElementById("skorku").hidden=true;
+			document.getElementById("nyawaku").hidden=true;
+			document.getElementById("Answer").hidden=true;
+			document.getElementById("Menangcoy").innerHTML="SELAMAT ANDA MENANG !!!!! <br>Skor Anda = "+skor*20;
+			
+		}
+		function Kalah()
+		{
+			document.getElementById("nyawaku").hidden=true;
+			document.getElementById("jawabsaya").hidden=true;
+			document.getElementById("tombolku").hidden=true;
+			document.getElementById("nokosong").hidden=true;
+			document.getElementById("welcome").hidden=true;
+			document.getElementById("formgua").hidden=true;
+			document.getElementById("skorku").hidden=true;
+			document.getElementById("mulaiku").hidden=true;
+			document.getElementById("tombolkalah").hidden=false;
+
+			document.getElementById("Answer").hidden=true;
+			document.getElementById("Menangcoy").innerHTML="Anda Kalah";
+
+		}
+		function jawaban1()
+		{
+			var choice=document.formku.pilihan.value;	
+			if(choice == 'a')
+			{document.getElementById("Answer").style.color="green";
+				document.getElementById("Answer").innerHTML="Jawaban Anda Benar";
+				skor=skor+1;
+			}
+			else
+			{document.getElementById("Answer").style.color="red";
+				document.getElementById("Answer").innerHTML="Sayang Sekali, Anda Salah Bung";
+				nyawa=nyawa-1;
+			}
+			document.getElementById("tombolku").disabled=false;
+			document.getElementById("nyawagw").innerHTML=nyawa;
+			document.getElementById("total").innerHTML=skor;
+			i=i+1;
+		}
+		function jawaban2()
+		{
+			var choice=document.formku.pilihan.value;	
+			if(choice == 'b')
+			{document.getElementById("Answer").style.color="green";
+				document.getElementById("Answer").innerHTML="Jawaban Anda Benar";
+				skor=skor+1;
+			}
+			else
+			{
+					document.getElementById("Answer").style.color="red";
+				document.getElementById("Answer").innerHTML="Sayang Sekali, Anda Salah Bung";
+				nyawa=nyawa-1;
+			}
+			document.getElementById("tombolku").disabled=false;
+			document.getElementById("nyawagw").innerHTML=nyawa;
+			document.getElementById("total").innerHTML=skor;
+			i=i+1;
+		}
+		function jawaban3()
+		{
+			var choice=document.formku.pilihan.value;	
+			if(choice == 'c')
+			{document.getElementById("Answer").style.color="green";
+				document.getElementById("Answer").innerHTML="Jawaban Anda Benar";
+				skor=skor+1;
+			}
+			else
+			{
+					document.getElementById("Answer").style.color="red";
+				document.getElementById("Answer").innerHTML="Sayang Sekali, Anda Salah Bung";
+				nyawa=nyawa-1;
+			}
+			document.getElementById("tombolku").disabled=false;
+			document.getElementById("nyawagw").innerHTML=nyawa;
+			document.getElementById("total").innerHTML=skor;
+			i=i+1;
+		}
+		function jawaban4()
+		{
+			var choice=document.formku.pilihan.value;	
+			if(choice == 'a')
+			{document.getElementById("Answer").style.color="green";
+				document.getElementById("Answer").innerHTML="Jawaban Anda Benar";
+				skor=skor+1;
+			}
+			else
+			{
+					document.getElementById("Answer").style.color="red";
+				document.getElementById("Answer").innerHTML="Sayang Sekali, Anda Salah Bung";
+				nyawa=nyawa-1;
+			}
+			document.getElementById("tombolku").disabled=false;
+			document.getElementById("nyawagw").innerHTML=nyawa;
+			document.getElementById("total").innerHTML=skor;
+			i=i+1;
+		}
+		function jawaban5()
+		{
+			var choice=document.formku.pilihan.value;	
+			if(choice == 'd')
+			{
+				document.getElementById("Answer").style.color="green";
+				document.getElementById("Answer").innerHTML="Jawaban Anda Benar";
+				skor=skor+1;
+
+			}
+			else
+			{
+					document.getElementById("Answer").style.color="red";
+				document.getElementById("Answer").innerHTML="Sayang Sekali, Anda Salah Bung";
+				nyawa=nyawa-1;
+			}
+			document.getElementById("nyawagw").innerHTML=nyawa;
+			document.getElementById("total").innerHTML=skor;
+		}
+	</script>
+	<link rel="stylesheet" type="text/css" href="cssku.css">
+	
+</head>
+<body background="background-web.jpg">
+<center>
+	<div class="login-page"  >
+		<div class="formane">
+			<h1 id="welcome" >Selamat Datang di Game Kuis Tampan</h1>
+			<div id="formgua" hidden="true">
+				<form name="formku">
+					<input type="text" name="question" width="100px" disabled=""><br><br>
+					<input type="radio" name="pilihan" value="a" id="pilihangw1">A. <span id="pila"></span>
+					<input type="radio" name="pilihan" value="b" id="pilihangw2">B. <span id="pilb"></span>
+					<input type="radio" name="pilihan" value="c" id="pilihangw3">C. <span id="pilc"></span>
+					<input type="radio" name="pilihan" value="d" id="pilihangw4">D. <span id="pild"></span><br>
+					
+				</form>
+			</div>
+			<button type="" onClick="soal1()" id="mulaiku">Mulai</button>
+			<h3 id="nokosong" hidden="true">Setidaknya Berusahalah Menjawab </h3>
+			<button type="" onClick="validasi()" id="jawabsaya" hidden="true">Jawab</button>
+			<button type="" onClick="mulai()" id="tombolku" disabled="true" hidden="true">Soal berikutnya</button>
+			<p id="Answer"></p>
+			
+			<div id="skorku" hidden="true"><p>Jumlah benar anda = <span id="total"></span></p></div>
+			<div id="nyawaku" hidden="true"><p>Nyawa anda tersisa = <span id="nyawagw"></span></p></div>
+			<h1 id="Menangcoy"></h1><br>
+			<a href="kuisku.html" hidden="true" id="tombolkalah"><button>Main Lagi</button></a>
+			
+		</div >
+	</div>
+</center>
+</body>
+</html>
